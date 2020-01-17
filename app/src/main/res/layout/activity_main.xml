@@ -1,0 +1,48 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".5"
+            android:id="@+id/pairedRecycler"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0000110E-0000-1000-8000-00805F9B34FB"
+            app:layout_constraintTop_toBottomOf="@id/pairedRecycler"
+            android:id="@+id/dataEd"
+            />
+    <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dataEd"
+            android:text="send message"
+            android:id="@+id/btnSend"
+            />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnSend"
+            android:text="send message"
+            android:id="@+id/btnDisconnect"
+            />
+    <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btnDisconnect"
+            android:text="run server"
+            android:id="@+id/btnRunServer"
+            />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="on the phone's setting enable bluetooth and pair a device and then click on the name of your paired device to connect."
+            app:layout_constraintTop_toBottomOf="@id/btnRunServer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

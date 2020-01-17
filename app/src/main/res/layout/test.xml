@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/white"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RadioGroup
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="bottom"
+            android:background="#ff0a0f2c"
+            android:id="@+id/main_tab_group"
+            android:layout_height="55.0dip"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+        <RadioButton
+                android:button="@null"
+                android:drawableTop="@drawable/route"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center"
+                android:id="@+id/radio_route"
+                android:layout_height="fill_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1.0"
+                android:layout_width="fill_parent"
+                android:paddingLeft="1.0dip"
+                android:paddingRight="1.0dip"
+                android:paddingTop="10.0dip"
+                android:text="ROUTE"
+                android:textColor="@drawable/color_radiobutton"
+                android:textSize="8sp" />
+
+        <RadioButton
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/solo_wheel"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center"
+                android:id="@+id/radio_solewheel"
+                android:layout_height="fill_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1.0"
+                android:layout_width="fill_parent"
+                android:paddingLeft="1.0dip"
+                android:paddingRight="1.0dip"
+                android:paddingTop="10.0dip"
+                android:text="@string/app_name"
+                android:textColor="@drawable/color_radiobutton"
+                android:textSize="8sp" />
+
+        <RadioButton
+                android:button="@null"
+                android:drawableTop="@drawable/me"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center"
+                android:id="@+id/radio_my"
+                android:layout_height="fill_parent"
+                android:layout_margin="1.0dip"
+                android:layout_weight="1.0"
+                android:layout_width="fill_parent"
+                android:paddingLeft="1.0dip"
+                android:paddingRight="1.0dip"
+                android:paddingTop="10.0dip"
+                android:text="more"
+                android:textColor="@drawable/color_radiobutton"
+                android:textSize="8sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
