@@ -30,13 +30,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/btnSend"
-            android:text="send message"
-            android:id="@+id/btnDisconnect"
+            android:text="send command"
+            android:id="@+id/btnSendCommand"
             />
     <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/btnDisconnect"
+            app:layout_constraintTop_toBottomOf="@id/btnSendCommand"
             android:text="run server"
             android:id="@+id/btnRunServer"
             />

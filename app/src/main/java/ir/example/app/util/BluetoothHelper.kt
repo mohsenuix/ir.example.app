@@ -98,14 +98,12 @@ class BluetoothHelper(var activity: MainActivity) {
         }
 
         override fun run() {
-            val buffer = ByteArray(30)  // buffer store for the stream
+            val buffer = ByteArray(200)  // buffer store for the stream
             var bytes: Int // bytes returned from read()
 
             // Keep listening to the InputStream until an exception occurs
             while (true) {
                 try {
-                    var numberofbytes = mmInStream?.available()
-                    Timber.i("BluetoothHelper: connect thread nubmer of bytes available $numberofbytes")
                     // Read from the InputStream
                     bytes = mmInStream?.read(buffer)!!
                     mmInStream

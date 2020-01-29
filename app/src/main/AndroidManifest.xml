@@ -59,17 +59,7 @@
 
         </activity>
         <activity android:name="ir.example.app.ui.MainActivity" android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-            </intent-filter>
-            <meta-data android:name="android.app.searchable"
-                       android:resource="@xml/searchable"/>
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
 
 
         </activity>
@@ -78,6 +68,24 @@
 
         </activity>
         <activity android:name="ir.example.app.ui.TestActivity">
+
+        </activity>
+
+        <activity android:name=".ui.activity.bluetooth.BluetoothActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                    android:resource="@xml/searchable"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.setting.SettingActivity">
 
         </activity>
     </application>
